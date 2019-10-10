@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".Final">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:id="@+id/actionbar"
+            layout="@layout/action_bar_layout"/>
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/actionbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@mipmap/tick"/>
+
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="310dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/icon"
+            android:layout_marginTop="8dp"
+            android:padding="6dp"
+            android:text="Your groceries will be delivered to you within 2-3 business days."
+            android:textSize="25dp"
+            android:textColor="#3e3c3c"
+            android:background="#99ff00"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1"
+            android:text="Make your grocery experience better with EasyGrocery :)"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_marginTop="135dp"
+            android:textSize="25dp"
+            android:textColor="#00a121"
+            android:textStyle="bold|italic"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="95dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/action_bar_layout"/>
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="@color/myGreen"
+        android:text="Welcome"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3e3c3c"
+        android:text="Pick a category :"
+        android:layout_marginLeft="17dp"
+        android:textSize="22dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/vegetables"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/search"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:scaleType="centerCrop"
+             />
+
+        <ImageView
+            android:id="@+id/fruits"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/vegetables"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:scaleType="centerCrop"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/foodgrains"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:scaleType="centerCrop"
+             />
+
+        <ImageView
+            android:id="@+id/meat"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:layout_weight="50"
+            android:scaleType="centerCrop"
+             />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/linear2"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="65dp"
+        ></ListView>
+
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
